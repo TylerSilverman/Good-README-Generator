@@ -1,0 +1,22 @@
+{
+  "name": "hw-9-good-readme-generator",
+  "version": "1.0.0",
+  "description": "Application that writes a Good README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerSilverman/HW-9-Good-README-Generator.git"
+  },
+  "author": "Tyler Silverman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerSilverman/HW-9-Good-README-Generator/issues"
+  },
+  "homepage": "https://github.com/TylerSilverman/HW-9-Good-README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
