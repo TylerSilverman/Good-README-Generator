@@ -72,11 +72,24 @@ inquirer.prompt([
         name: "contents",
         choices:["names", "examples", "questions", "feedback"],
     },
+    {
+        // password
+        type: "password",
+        message:"What is your password?",
+        name: "password",
+    },
+    {
+        // confirming the password
+        type: "password",
+        message:"Re-enter the password to confirm?",
+        name: "confirm",
+    },
 ])
 .then(function(answers){
-    console.log(answers)
-
-
+    answers.confirm === answers.password
+    ? console.log("Access Granted")
+    : console.log("Did you forget your password?");
+    //  console.log(answers)
 
 
 // generateAnswers(answers)
