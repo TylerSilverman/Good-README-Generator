@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const { generate } = require('rxjs');
+const fs = require('fs');
  
 
 inquirer.prompt([
@@ -42,8 +42,8 @@ inquirer.prompt([
     },
     {
         //any liceneses used for project
-        type: "list",
-        message:"Did you use any licenses to create the project?",
+        type: "checkbox",
+        message:"What licenses did you use to create the project?",
         name: "license",
         choices:["License A", "License B", "License C", "License D"],
     },
@@ -84,18 +84,16 @@ inquirer.prompt([
         message:"Re-enter the password to confirm?",
         name: "confirm",
     },
-])
-.then(function(answers){
-    answers.confirm === answers.password
-    ? console.log("Access Granted")
-    : console.log("Did you forget your password?");
+]).then((data)=>{
+    
+const filename = "log.txt";
+
+fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
+err ? console.log(err) : console.log ("Information Saved")
+    );
+});
+// .then(function(answers){
+//     answers.confirm === answers.password
+//     ? console.log("Access Granted")
+//     : console.log("Did you forget your password?");
     //  console.log(answers)
-
-
-// generateAnswers(answers)
-
-})
-// need to create a readme file to generate answers and be sent to the readme.md file 
-// function generateAnswers (){
-//     console.log(generateAnswers)
-// }
