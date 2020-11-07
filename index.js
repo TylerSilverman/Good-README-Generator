@@ -101,9 +101,11 @@ const filename = "log.txt";
 fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
 err ? console.log(err) : console.log ("Information Saved")
     );
-});
+})
+//function to check if the password is correct or not but can ont use both functions at the same time. 
 // .then(function(answers){
 //     answers.confirm === answers.password
 //     ? console.log("Access Granted")
 //     : console.log("Did you forget your password?");
-    //  console.log(answers)
+//      console.log(answers)
+// })
