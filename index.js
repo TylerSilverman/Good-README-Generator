@@ -96,7 +96,7 @@ inquirer.prompt([
     //function to create the information saved on another filename
 ]).then((data)=>{
     
-const filename = "log.txt";
+const filename = "index.html";
 
 fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
 err ? console.log(err) : console.log ("Information Saved")
