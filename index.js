@@ -40,7 +40,7 @@ inquirer.prompt([
         type: "checkbox",
         message:"What licenses did you use to create the project?",
         name: "licenses used:",
-        choices:["Paython", "HTML/CSS", "Javascript", "Node"],
+        choices:["MIT", "APACHE 2.0", "GitHub", "GPL 3.0", "None"],
     },
     {
         //#7any contributions used for project
@@ -50,24 +50,17 @@ inquirer.prompt([
         choices: ["Yes", "No"],
     },
     {
-        //#8testing procedures
+        //#8 types of package names 
         type: "checkbox",
-        message:"What test procedures did you use for the project?",
-        name: "testing Procedures used:",
-        choices:["Procedure A", "Procedure B", "Procedure C", "Procedure D"],
+        message:"What type of package names did you use for the project?",
+        name: "Package Names used:",
+        choices:["APM", "Bower", "CRAN/METACRAN", "PyPI"],
     },
     {
-        //#9Questions
-        type: "checkbox",
-        message:"Do you have any questions?",
-        name: "questions",
-        choices: ["Yes", "No"]
-    },
-    {
-        //#9-1 Ask the question
+        //#9If you have Questions leave contact information
         type: "input",
-        message:"What is your question?",
-        name: "Question:",
+        message:"If you have questions, please leave your contact information and I will reach out to you.",
+        name: "input",
     },
     {
         //github username
