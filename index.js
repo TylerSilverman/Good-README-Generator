@@ -1,8 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require ('util');
  
 
-inquirer.prompt([
+    inquirer.prompt([
     {
         // #3table of contents
         type: "list",
@@ -87,14 +88,66 @@ inquirer.prompt([
         name: "confirm",
     },
     //function to create the information saved on another filename
-]).then((data)=>{
-    
-const filename = "index.html";
+    ]).then((data)=>{
+        
+    const filename = "index.html";
 
-fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
-err ? console.log(err) : console.log ("Information Saved")
-    );
-})
+    fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
+    err ? console.log(err) : console.log ("Information Saved")
+        );
+    })
+
+
+//function to generate the fileName after all the questions have been asked:
+
+function generateFileName (response) {
+    return
+
+    //title
+    // ${reponse.title}
+
+    // //description
+    // ${response.description}
+
+    // //installation 
+    // ${response.installation}
+
+    // //usage
+    // ${response.usage}
+
+    // //contribution 
+    // ${response.contribution}
+
+    // //test
+    // ${response.test}
+
+    // //questions and comments 
+    // ${response.questions}
+
+    // //license
+    // ${response.license}
+
+
+    //function init to create the program after questions are answered:
+    async function init () {
+        try {
+            const response = await promptStart ();
+
+            const fileName = generateFileName(response);
+
+            await fs.writeFile ("index.html", index.html);
+            console.log("completed");
+        }catch (err) {
+            console.log(err);
+        }
+    };
+
+    //function call to start the program
+    init ();
+};
+
+
+
 //function to check if the password is correct or not but can ont use both functions at the same time. 
 // .then(function(answers){
 //     answers.confirm === answers.password
