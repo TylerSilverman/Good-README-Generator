@@ -7,9 +7,9 @@ const writeFileAsync = util.promisify(fs.watchFile);
 function promptStart (){
     return inquirer.prompt([
     {
-        // #3table of contents
+        // #3table of contents description 
         type: "list",
-        message:"Table of Contents?",
+        message:"Table of Contents:",
         name: "contents",
         choices:["Description", "Installation", "Usage", "Contribution", "Tests", "License", "Questions/Comments"],
     },
@@ -89,8 +89,8 @@ function promptStart (){
     },
     //function to create the information saved on another filename
     ]).then((data)=>{
-        
-    const filename = "index.html";
+    
+    const filename = "practice.text";
 
     fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
     err ? console.log(err) : console.log ("Information Saved")
@@ -100,53 +100,50 @@ function promptStart (){
 
 //function to generate the fileName after all the questions have been asked:
 
-function generateFileName (response) {
-    return
 
     //title
     // ${reponse.title}
 
     // //description
-    // ${response.description}
+    // $(response.description)
 
     // //installation 
     // [Installation](#installation)
-    // ${response.installation}
+    // $(response.installation)
 
     // //usage
-    // ${response.usage}
+    // $(response.usage)
 
-    // //contribution 
-    // ${response.contribution}
+    // //contributor
+    // $(response.contributor)
 
     // //test
-    // ${response.test}
+    // $(response.test)
 
     // //questions and comments 
-    // ${response.questions}
+    // $(response.questions)
 
     // //license
-    // ${response.license}
+    // $(response.license)
 
-}
 
 
 //function init to create the program after questions are answered:
-async function init () {
-        try {
-            const response = await promptStart ();
+// async function init () {
+//         try {
+//             const response = await promptStart ();
 
-            const fileName = generateFileName(response);
+//             const writeFileAsync = generateFileName(response);
 
-            await fs.writeFile ("index.html", index.html);
-            console.log("completed");
-        }catch (err) {
-            console.log(err);
-    }
-};
+//             await fs.writeFile ("index.html", index.html);
+//             console.log("completed");
+//         }catch (err) {
+//             console.log(err);
+//     }
+// };
 
-//function call to start the program
-init ();
+// //function call to start the program
+// init ();
 
 
 

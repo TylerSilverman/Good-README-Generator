@@ -3,7 +3,7 @@
 * [Description](#description): 
 * [Installation](#installation):
 * [Usage](#usage):
-* [Contributing](#contribution):
+* [Contributor](#contributor):
 * [Tests](#test):
 * [Questions](#questions):
 
@@ -15,11 +15,11 @@ Make sure that the README generator works, which can be downloaded from my githu
 To use run the commande: node index.js and then will be prompted to begin. 
 After completing the questions a generated README is created. 
 
-## Contribution 
+## Contributor 
 Who Contributed to the readMe generator: 
 
 ## Test
-To run adminstative tests, input the following command: `npm test tyler`
+Run adminstative tests.
 
 ## License
 Several License Choices to use:
@@ -38,9 +38,8 @@ None License: https://img.shields.io/badge/license-None-blue.svg
 <br>
 ## Questions
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
-<<<<<<< HEAD
+
 * Email: [Email](silverman.tyler@gmail.com)
-=======
+=
 * Email: (silverman.tyler@gmail.com)
->>>>>>> cef3f5742702d3dc85dd780be3a798b3e8dcf35d
 
