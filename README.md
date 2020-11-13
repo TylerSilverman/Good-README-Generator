@@ -44,5 +44,5 @@ https://img.shields.io/badge/license-None-blue.svg
 * [Questions](#questions)
 
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
-* Direct Contact $(adminInput.email)
+* Email: [Email](silverman.tyler@gmail.com)
 
