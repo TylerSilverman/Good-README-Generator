@@ -8,7 +8,7 @@
 
 ## Installation 
 
-* [Installation](#installation)
+* [Installation](#installation):
 To make sure that the README generator works, is download the repo from my github page below, also make sure to run: npm init and npm install inquirer to make sure its fully set up. 
 
 ## Usage

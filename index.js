@@ -1,9 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require ('util');
- 
 
-    inquirer.prompt([
+const writeFileAsync = util.promisify(fs.watchFile);
+ 
+function promptStart (){
+    return inquirer.prompt([
     {
         // #3table of contents
         type: "list",
@@ -15,20 +17,19 @@ const util = require ('util');
         //#1name of project
         type: "input",
         message:"What is the name of your project",
-        name: "title of project",
+        name: "title",
     },
     {
         //#2decsription of project
         type: "input",
         message:"What is the description of your project",
-        name: "description of project",
+        name: "description",
     },
     {
         //#4installation of project
-        type: "checkbox",
-        message:"What did you use to install the project?",
+        type: "input",
+        message:"What install instructions were used to run the project, If None were used, write NONE.",
         name: "installation",
-        choices: ["javascript", "VS Code", "just installed all on its own"],
     },
     {
         //#5usage for the project- Done
@@ -45,10 +46,9 @@ const util = require ('util');
     },
     {
         //#7any contributions used for project
-        type: "checkbox",
-        message:"Did you use any contributions to create the project?",
+        type: "input",
+        message:"Who contributed to create the project?",
         name: "contributed to the project:",
-        choices: ["Yes", "No"],
     },
     {
         //#8 types of package names 
@@ -60,7 +60,7 @@ const util = require ('util');
     {
         //#9If you have Questions leave contact information- Done
         type: "input",
-        message:"If you have questions, please leave your contact information and I will reach out to you.",
+        message:"If you have questions, please leave your email or phone number and I will reach out to you.",
         name: "input",
     },
     {
@@ -96,7 +96,7 @@ const util = require ('util');
     err ? console.log(err) : console.log ("Information Saved")
         );
     })
-
+}
 
 //function to generate the fileName after all the questions have been asked:
 
@@ -110,6 +110,7 @@ function generateFileName (response) {
     // ${response.description}
 
     // //installation 
+    // [Installation](#installation)
     // ${response.installation}
 
     // //usage
@@ -127,9 +128,11 @@ function generateFileName (response) {
     // //license
     // ${response.license}
 
+}
 
-    //function init to create the program after questions are answered:
-    async function init () {
+
+//function init to create the program after questions are answered:
+async function init () {
         try {
             const response = await promptStart ();
 
@@ -139,12 +142,12 @@ function generateFileName (response) {
             console.log("completed");
         }catch (err) {
             console.log(err);
-        }
-    };
-
-    //function call to start the program
-    init ();
+    }
 };
+
+//function call to start the program
+init ();
+
 
 
 
