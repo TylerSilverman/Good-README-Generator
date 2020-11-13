@@ -1,15 +1,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require ('util');
-
-const writeFileAsync = util.promisify(fs.watchFile);
  
-function promptStart (){
+function promptUser (){
     return inquirer.prompt([
     {
-        // #3table of contents description 
+        // #3table of contents
         type: "list",
-        message:"Table of Contents:",
+        message:"Table of Contents?",
         name: "contents",
         choices:["Description", "Installation", "Usage", "Contribution", "Tests", "License", "Questions/Comments"],
     },
@@ -28,7 +26,7 @@ function promptStart (){
     {
         //#4installation of project
         type: "input",
-        message:"What install instructions were used to run the project, If None were used, write NONE.",
+        message:"What install instructions were used? If None were used, write NONE.",
         name: "installation",
     },
     {
@@ -42,7 +40,7 @@ function promptStart (){
         type: "checkbox",
         message:"What licenses did you install?",
         name: "licenses used:",
-        choices:["MIT", "APACHE 2.0", "GitHub", "GPL 3.0", "None"],
+        choices:["MIT", "APACHE 2.0", "GitHub", "GPL 3.0"],
     },
     {
         //#7any contributions used for project
@@ -60,7 +58,7 @@ function promptStart (){
     {
         //#9If you have Questions leave contact information- Done
         type: "input",
-        message:"If you have questions, please leave your email or phone number and I will reach out to you.",
+        message:"If you have questions, please leave your contact information.",
         name: "input",
     },
     {
@@ -89,8 +87,8 @@ function promptStart (){
     },
     //function to create the information saved on another filename
     ]).then((data)=>{
-    
-    const filename = "practice.text";
+        
+    const filename = "index.html";
 
     fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
     err ? console.log(err) : console.log ("Information Saved")
@@ -100,58 +98,24 @@ function promptStart (){
 
 //function to generate the fileName after all the questions have been asked:
 
-
-    //title
-    // ${reponse.title}
-
-    // //description
-    // $(response.description)
-
-    // //installation 
-    // [Installation](#installation)
-    // $(response.installation)
-
-    // //usage
-    // $(response.usage)
-
-    // //contributor
-    // $(response.contributor)
-
-    // //test
-    // $(response.test)
-
-    // //questions and comments 
-    // $(response.questions)
-
-    // //license
-    // $(response.license)
-
-
+function generateFileName (response) {
+    return
+}
 
 //function init to create the program after questions are answered:
-// async function init () {
-//         try {
-//             const response = await promptStart ();
+async function init () {
+        try {
+            const response = await promptUser ();
 
-//             const writeFileAsync = generateFileName(response);
+            const writeFileAsync = generateFileName(response);
 
-//             await fs.writeFile ("index.html", index.html);
-//             console.log("completed");
-//         }catch (err) {
-//             console.log(err);
-//     }
-// };
+            await fs.writeFile ("index.html", index.html);
+            console.log("completed");
+        }catch (err) {
+            console.log(err);
+    }
+};
 
-// //function call to start the program
-// init ();
+//function call to start the program
+init ();
 
-
-
-
-//function to check if the password is correct or not but can ont use both functions at the same time. 
-// .then(function(answers){
-//     answers.confirm === answers.password
-//     ? console.log("Access Granted")
-//     : console.log("Did you forget your password?");
-//      console.log(answers)
-// })

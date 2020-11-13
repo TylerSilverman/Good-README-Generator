@@ -40,6 +40,4 @@ None License: https://img.shields.io/badge/license-None-blue.svg
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
 
 * Email: [Email](silverman.tyler@gmail.com)
-=
-* Email: (silverman.tyler@gmail.com)
 
