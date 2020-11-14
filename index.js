@@ -89,9 +89,10 @@ inquirer.prompt([
     ]).then(function(answers){
     console.log(answers)
 
-    const filename = "index.html";
+        //line 93- shows what file is going to be made from the questions anaswered 
+    const fileName = "log.txt";
 
-    fs.writeFile(filename, JSON.stringify(answers, null, "\t"), (err) =>
+    fs.writeFile(fileName, JSON.stringify(answers, null, "\t"), (err) =>
     err ? console.log(err) : console.log ("Information Saved")
         );
     })
