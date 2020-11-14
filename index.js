@@ -39,7 +39,7 @@ inquirer.prompt([
         type: "list",
         message: "What licenses did you install?",
         name: "Licenses",
-        choices: [" MIT https://img.shields.io/badge/license-MIT-blue.svg", "APACHE 2.0", "GitHub", "GPL 3.0"],
+        choices: [" MIT", "APACHE 2.0", "GitHub", "GPL 3.0"],
     },
     {
         //#7any contributions used for project

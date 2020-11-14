@@ -14,14 +14,14 @@ This application allows you to create a README document.
 
 * Make sure to install
 <br>
-npm install inquirer 
+        npm install inquirer 
 
 ## Usage
 
 * To use the code, in the terminal type: node index.js, thehn you will be prompted with a set of questions which will create a generated ReadMe file. You will need to input anaswers, choose from a list, and also have a checkbox. 
 
 ## Contributor 
-Contributed to the readMe generator: 
+Tyler Silverman - If you would like to contribute to this repo please leave contact information. 
 
 ## Test
 To test the function type in the terminal: node index.js 
@@ -44,6 +44,4 @@ None License: https://img.shields.io/badge/license-None-blue.svg
 
 ## Questions
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
-
-* Email: [Email](silverman.tyler@gmail.com)
 
