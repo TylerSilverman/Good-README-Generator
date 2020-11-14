@@ -1,16 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require ('util');
+const { generate } = require (`rxjs`);
+// const util = require ('util');
  
-function promptUser (){
-    return inquirer.prompt([
-    {
-        // #3table of contents
-        type: "list",
-        message:"Table of Contents?",
-        name: "contents",
-        choices:["Description", "Installation", "Usage", "Contribution", "Tests", "License", "Questions/Comments"],
-    },
+inquirer.prompt([
     {
         //#1name of project
         type: "input",
@@ -33,26 +26,26 @@ function promptUser (){
         //#5usage for the project- Done
         type: "input",
         message:"What usage did you use for the project?",
-        name: "Usage used:",
+        name: "Usage",
     },
     {
         //#6any liceneses used for project - Done
         type: "checkbox",
         message:"What licenses did you install?",
-        name: "licenses used:",
+        name: "licenses",
         choices:["MIT", "APACHE 2.0", "GitHub", "GPL 3.0"],
     },
     {
         //#7any contributions used for project
         type: "input",
         message:"Who contributed to create the project?",
-        name: "contributed to the project:",
+        name: "contributor",
     },
     {
         //#8 types of package names 
         type: "checkbox",
         message:"What type of package names did you use for the project?",
-        name: "Package Names used:",
+        name: "Packages used:",
         choices:["APM", "Bower", "CRAN/METACRAN", "PyPI"],
     },
     {
@@ -85,37 +78,44 @@ function promptUser (){
         message:"Re-enter the password to confirm?",
         name: "confirm",
     },
+    {
+        // #3table of contents
+        type: "list",
+        message:"Table of Contents?",
+        name: "contents",
+        choices:["Description", "Installation", "Usage", "Contribution", "Tests", "License", "Questions/Comments"],
+    },
     //function to create the information saved on another filename
-    ]).then((data)=>{
-        
+    ]).then(function(answers){
+    console.log(answers)
+
     const filename = "index.html";
 
-    fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
+    fs.writeFile(filename, JSON.stringify(answers, null, "\t"), (err) =>
     err ? console.log(err) : console.log ("Information Saved")
         );
     })
-}
+
 
 //function to generate the fileName after all the questions have been asked:
 
-function generateFileName (response) {
-    return
-}
+// function generateFileName (response) {
+//     return
+// }
 
 //function init to create the program after questions are answered:
-async function init () {
-        try {
-            const response = await promptUser ();
+// async function init () {
+//         try {
+//             const response = await promptUser ();
 
-            const writeFileAsync = generateFileName(response);
+//             const writeFileAsync = generateFileName(response);
 
-            await fs.writeFile ("index.html", index.html);
-            console.log("completed");
-        }catch (err) {
-            console.log(err);
-    }
-};
+//             fs.writeFile ("index.html", `Information Content Saved`);
+//             console.log("completed");
+//         }catch (err) {
+//             console.log(err);
+//     }
+// };
 
-//function call to start the program
-init ();
-
+// //function call to start the program
+// init ();
