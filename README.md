@@ -1,6 +1,6 @@
 ## Description:
-This application allows you to create a README document. 
-https://drive.google.com/file/d/11hbCQ0bQsUQdNa0mIN-2NwQq6ffD1OW3/view
+This application allows you to create a README document. <br>
+Click Here to view:   [ReadMe](https://drive.google.com/file/d/11hbCQ0bQsUQdNa0mIN-2NwQq6ffD1OW3/view)
 
 ## Table of Contents: 
 
@@ -11,7 +11,7 @@ https://drive.google.com/file/d/11hbCQ0bQsUQdNa0mIN-2NwQq6ffD1OW3/view
 * [Questions](#questions):
 
 ## Installation 
-* Click to get the latest repo: https://github.com/TylerSilverman/HW-9-Good-README-Generator.git
+* Click to get the latest repo:<br> https://github.com/TylerSilverman/HW-9-Good-README-Generator.git
 
 * Make sure to install
 <br>
@@ -30,17 +30,17 @@ To test the function type in the terminal: node index.js
 ## License
 * Licenses used:
 <br>
-MIT License: https://img.shields.io/badge/license-MIT-blue.svg
+[MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 <br>
-APACHE License: https://img.shields.io/badge/license-APACHE-blue.svg
+[APACHE](https://img.shields.io/badge/license-APACHE-blue.svg)
 <br>
-GitHub License: https://img.shields.io/badge/license-github-blue.svg
+[GitHub](https://img.shields.io/badge/license-github-blue.svg)
 <br>
-GPL License: https://img.shields.io/badge/license-GPL-blue.svg
+[GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 <br>
-BSD3 License: https://img.shields.io/badge/license-BSD3-blue.svg
+[BSD3](https://img.shields.io/badge/license-BSD3-blue.svg)
 <br>
-None License: https://img.shields.io/badge/license-None-blue.svg
+[None](https://img.shields.io/badge/license-None-blue.svg)
 <br>
 
 ## Questions
