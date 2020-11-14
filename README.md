@@ -1,6 +1,6 @@
 ## Table of Contents: 
 
-* [Description](#description): 
+* [Title](#title): 
 * [Installation](#installation):
 * [Usage](#usage):
 * [Contributor](#contributor):
