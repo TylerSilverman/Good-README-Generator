@@ -1,6 +1,8 @@
+## Description:
+This application allows you to create a README document. 
+
 ## Table of Contents: 
 
-* [Title](#title): 
 * [Installation](#installation):
 * [Usage](#usage):
 * [Contributor](#contributor):
@@ -8,20 +10,21 @@
 * [Questions](#questions):
 
 ## Installation 
-Make sure that the README generator works, which can be downloaded from my github page or click to get the latest repo: https://github.com/TylerSilverman/HW-9-Good-README-Generator.git .
-*Also make sure to run: npm init and npm install inquirer to make sure fully set up.*
+* Click to get the latest repo: https://github.com/TylerSilverman/HW-9-Good-README-Generator.git
+
+* Make sure to install
+<br>
+npm install inquirer 
 
 ## Usage
 
-* Run the command: node index.js and then will be prompted to begin. 
-* After completing the questions a generated README is created. 
+* To use the code, in the terminal type: node index.js, thehn you will be prompted with a set of questions which will create a generated ReadMe file. You will need to input anaswers, choose from a list, and also have a checkbox. 
 
 ## Contributor 
 Contributed to the readMe generator: 
 
 ## Test
-Click Here to test code:
-*Make sure to have all installations downloaded.*
+To test the function type in the terminal: node index.js 
 
 ## License
 * Licenses used:
