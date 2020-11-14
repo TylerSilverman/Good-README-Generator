@@ -30,17 +30,23 @@ To test the function type in the terminal: node index.js
 ## License
 * Licenses used:
 <br>
-[MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
+  [MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 <br>
-[APACHE](https://img.shields.io/badge/license-APACHE-blue.svg)
+
+  [APACHE](https://img.shields.io/badge/license-APACHE-blue.svg)
 <br>
-[GitHub](https://img.shields.io/badge/license-github-blue.svg)
+
+  [GitHub](https://img.shields.io/badge/license-github-blue.svg)
 <br>
-[GPL](https://img.shields.io/badge/license-GPL-blue.svg)
+
+  [GPL](https://img.shields.io/badge/license-GPL-blue.svg)
 <br>
-[BSD3](https://img.shields.io/badge/license-BSD3-blue.svg)
+
+  [BSD3](https://img.shields.io/badge/license-BSD3-blue.svg)
 <br>
-[None](https://img.shields.io/badge/license-None-blue.svg)
+
+  [None](https://img.shields.io/badge/license-None-blue.svg)
 <br>
 
 ## Questions
