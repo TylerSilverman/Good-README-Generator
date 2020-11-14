@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { generateFile } = require (`util`);
+// const generateFile  = require (`./README`);
 const util = require ('util');
  
 inquirer.prompt([
@@ -40,7 +40,7 @@ inquirer.prompt([
         type: "checkbox",
         message:"What licenses did you install?",
         name: "Licenses",
-        choices:["MIT", "APACHE 2.0", "GitHub", "GPL 3.0"],
+        choices:["MIT License: https://img.shields.io/badge/license-MIT-blue.svg", "APACHE 2.0", "GitHub", "GPL 3.0"],
     },
     {
         //#7any contributions used for project
@@ -93,7 +93,7 @@ inquirer.prompt([
     const fileName = "readMe.practice.md";
 
     fs.writeFile(fileName, JSON.stringify(answers, null, "\t"), (err) =>
-    err ? console.log(err) : console.log ("Information Saved")
+    err ? console.log(err) : console.log ("Information Created a README.md")
         );
     })
 ;

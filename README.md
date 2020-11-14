@@ -8,21 +8,23 @@
 * [Questions](#questions):
 
 ## Installation 
-Make sure that the README generator works, which can be downloaded from my github page or click to get the latest repo: https://github.com/TylerSilverman/HW-9-Good-README-Generator.git .Also make sure to run: npm init and npm install inquirer to make sure its fully set up. 
+Make sure that the README generator works, which can be downloaded from my github page or click to get the latest repo: https://github.com/TylerSilverman/HW-9-Good-README-Generator.git .
+*Also make sure to run: npm init and npm install inquirer to make sure fully set up.*
 
 ## Usage
 
-To use run the commande: node index.js and then will be prompted to begin. 
-After completing the questions a generated README is created. 
+* Run the command: node index.js and then will be prompted to begin. 
+* After completing the questions a generated README is created. 
 
 ## Contributor 
-Who Contributed to the readMe generator: 
+Contributed to the readMe generator: 
 
 ## Test
-Run adminstative tests.
+Click Here to test code:
+*Make sure to have all installations downloaded.*
 
 ## License
-Several License Choices to use:
+* Licenses used:
 <br>
 MIT License: https://img.shields.io/badge/license-MIT-blue.svg
 <br>
