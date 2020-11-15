@@ -2,27 +2,34 @@ function generateFile (answers) {
     return  `
 
 ## Table of Contents:
+## Description
+##Installation
+## Usage
+## Contributor
+## Test 
+## License 
+## Questions
 ${answers.Contents}
 
-## Title: 
+## ReadMe Title: 
 ${answers.Title}
     
-## Description
+## Description ReadMe:
 ${answers.Description}
 
 ## Installation 
 ${answers.Installation}
 
-## Usage
+## Usage that were used:
 ${answers.Usage}
 
-## Contributor
+## Contributors, please email Tyler Silverman 
 ${answers.Contributor}
 
-## Test
+## Test Used:
 ${answers.Test}
 
-## Questions 
+## Questions and Comments:
 ${answers.Questions}
 
 ## License
