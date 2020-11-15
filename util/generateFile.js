@@ -9,6 +9,8 @@ function generateFile (answers) {
 ## Test 
 ## License 
 ## Questions
+
+# Table of Contents:
 ${answers.Contents}
 
 ## ReadMe Title: 
@@ -23,7 +25,7 @@ ${answers.Installation}
 ## Usage that were used:
 ${answers.Usage}
 
-## Contributors, please email Tyler Silverman 
+## Contributors: Tyler Silverman /  
 ${answers.Contributor}
 
 ## Test Used:
@@ -32,7 +34,7 @@ ${answers.Test}
 ## Questions and Comments:
 ${answers.Questions}
 
-## License
+## A least of Licenses:
 ${answers.Licenses}
 
 `;
