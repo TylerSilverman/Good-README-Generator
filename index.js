@@ -78,7 +78,7 @@ inquirer.prompt([
     console.log(answers)
 
     //line 93- shows what file is going to be made from the questions anaswered 
-    const fileName = "output/README.md";
+    const fileName = (__dirname, "output/test.html");
 
     const content = generateContent(answers);
 
